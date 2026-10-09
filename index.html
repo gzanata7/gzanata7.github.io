@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZV Acomodações | Links</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a1a;
+      color: #f5f5f5;
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+    }
+
+    /* ── Logo / Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .logo-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 2px solid #c9a84c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #c9a84c;
+      letter-spacing: 1px;
+    }
+    .header h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #f5f5f5;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .header p {
+      font-size: 12px;
+      color: #c9a84c;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .gold-line {
+      width: 50px;
+      height: 1px;
+      background: #c9a84c;
+      margin: 14px auto 0;
+    }
+
+    /* ── Container ── */
+    .links {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* ── Botão padrão ── */
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 22px;
+      background: #242424;
+      border: 1px solid #c9a84c55;
+      border-radius: 8px;
+      color: #f5f5f5;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: border-color .2s, background .2s;
+    }
+    .btn:hover {
+      border-color: #c9a84c;
+      background: #2e2b23;
+    }
+    .btn .icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .btn .label { flex: 1; }
+    .btn .label span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: #c9a84c;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* ── Accordion Airbnb ── */
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 22px;
+      background: #242424;
+      border: 1px solid #c9a84c;
+      border-radius: 8px;
+      color: #f5f5f5;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: left;
+      letter-spacing: 0.5px;
+      transition: background .2s;
+    }
+    .accordion-header:hover { background: #2e2b23; }
+    .accordion-header .label { flex: 1; }
+    .accordion-header .label span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: #c9a84c;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .chevron {
+      font-size: 12px;
+      color: #c9a84c;
+      transition: transform .3s;
+    }
+    .accordion-header.open .chevron { transform: rotate(180deg); }
+
+    .accordion-body {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: -6px;
+      padding: 14px 12px;
+      background: #1f1f1f;
+      border: 1px solid #c9a84c55;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+    }
+    .accordion-body.open { display: flex; }
+
+    .sub-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: #2a2a2a;
+      border: 1px solid #c9a84c33;
+      border-radius: 6px;
+      color: #f5f5f5;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .sub-btn:hover {
+      border-color: #c9a84c;
+      background: #2e2b23;
+    }
+    .sub-btn .pin { font-size: 16px; flex-shrink: 0; }
+    .sub-btn .info { flex: 1; }
+    .sub-btn .info strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #f5f5f5;
+    }
+    .sub-btn .info em {
+      display: block;
+      font-size: 11px;
+      color: #c9a84c;
+      font-style: normal;
+      margin-top: 2px;
+    }
+
+    /* ── Seção label ── */
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 11px;
+      color: #444;
+      letter-spacing: 1px;
+    }
+    footer span { color: #c9a84c; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-circle">ZV</div>
+    <h1>ZV Acomodações</h1>
+    <p>Rio de Janeiro</p>
+    <div class="gold-line"></div>
+  </div>
+
+  <!-- Links -->
+  <div class="links">
+
+    <!-- WhatsApp -->
+    <a class="btn" href="https://wa.me/5521970603757" target="_blank" rel="noopener">
+      <span class="icon">💬</span>
+      <span class="label">
+        Fale Comigo no WhatsApp
+        <span>Atendimento direto</span>
+      </span>
+    </a>
+
+    <!-- Airbnb accordion -->
+    <div class="section-label">Nossos imóveis</div>
+
+    <div>
+      <button class="accordion-header" onclick="toggleAcc(this)">
+        <span class="icon">🏠</span>
+        <span class="label">
+          Airbnb — Ver Anúncios
+          <span>3 imóveis no Rio</span>
+        </span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="accordion-body">
+
+        <a class="sub-btn" href="https://airbnb.com/h/leblon470" target="_blank" rel="noopener">
+          <span class="pin">📍</span>
+          <span class="info">
+            <strong>Leblon</strong>
+            <em>A 500 metros da praia do Leblon</em>
+          </span>
+        </a>
+
+        <a class="sub-btn" href="https://airbnb.com/h/ipacopaarpoador" target="_blank" rel="noopener">
+          <span class="pin">📍</span>
+          <span class="info">
+            <strong>Copacabana · Ipanema · Arpoador</strong>
+            <em>A 5 minutos a pé da praia</em>
+          </span>
+        </a>
+
+        <a class="sub-btn" href="https://airbnb.com/h/saosebastiao30" target="_blank" rel="noopener">
+          <span class="pin">📍</span>
+          <span class="info">
+            <strong>Niterói</strong>
+            <em>O melhor de Niterói, a poucos passos</em>
+          </span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Ebook -->
+    <div class="section-label">Conhecimento</div>
+
+    <a class="btn" href="https://hotmart.com/pt-br/club/gabriel-zanata-mendonca-vieira-da-silva" target="_blank" rel="noopener">
+      <span class="icon">📖</span>
+      <span class="label">
+        E-book — Método ZV
+        <span>Aprenda a rentabilizar seu imóvel</span>
+      </span>
+    </a>
+
+    <!-- Instagram -->
+    <a class="btn" href="https://instagram.com/zvacomodacoes" target="_blank" rel="noopener">
+      <span class="icon">📸</span>
+      <span class="label">
+        Instagram
+        <span>@zvacomodacoes</span>
+      </span>
+    </a>
+
+  </div>
+
+  <footer>
+    <p>© 2026 <span>ZV Administração e Consultoria</span></p>
+    <p style="margin-top:4px">Gestão profissional de imóveis no Rio de Janeiro</p>
+  </footer>
+
+  <script>
+    function toggleAcc(btn) {
+      btn.classList.toggle('open');
+      const body = btn.nextElementSibling;
+      body.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

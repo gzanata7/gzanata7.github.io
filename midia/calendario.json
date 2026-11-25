@@ -94,6 +94,72 @@
     "media_id": "18040442522896823"
   },
   {
+    "data": "2026-11-24",
+    "ordem": 3,
+    "tipo": "reel",
+    "grade": false,
+    "video": "https://gzanata7.github.io/midia/2026-11/turista/R_turista_dia1_dia3.mp4",
+    "capa": "https://gzanata7.github.io/midia/2026-11/turista/R_turista_dia1_dia3_capa.jpg",
+    "legenda": "Manda pro amigo que vem pro Rio no verão 😂 Qual dia você tá: 1, 2 ou 3? ☀️\n\nHospedagem a pé da praia em Ipanema e no Leblon: link na bio.\n\n#riodejaneiro #turistandonorio #carioca #viagem #humor",
+    "obs": "Reel de teste; TikTok e YouTube via Metricool 24/11 22h29",
+    "status": "publicado",
+    "media_id": "18444682237183561"
+  },
+  {
+    "data": "2026-11-24",
+    "ordem": 4,
+    "tipo": "carrossel",
+    "grade": true,
+    "imagens": [
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_1.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_2.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_3.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_4.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_5.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_6.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/tipos_7.jpg"
+    ],
+    "legenda": "Tirinha Tipos de hóspede",
+    "status": "publicado",
+    "media_id": "18110846363196331",
+    "obs": "TikTok (fotos) agendado 25/11 18h23"
+  },
+  {
+    "data": "2026-11-24",
+    "ordem": 5,
+    "tipo": "carrossel",
+    "grade": true,
+    "imagens": [
+      "https://gzanata7.github.io/midia/2026-11/tipos/estrelas_1.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/estrelas_2.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/estrelas_3.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/estrelas_4.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/estrelas_5.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/estrelas_6.jpg"
+    ],
+    "legenda": "Tirinha Hóspede 5★ × 1★",
+    "status": "publicado",
+    "media_id": "18099162416476600",
+    "obs": "TikTok (fotos) agendado 26/11 18h23"
+  },
+  {
+    "data": "2026-11-24",
+    "ordem": 6,
+    "tipo": "carrossel",
+    "grade": true,
+    "imagens": [
+      "https://gzanata7.github.io/midia/2026-11/tipos/bairros_1.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/bairros_2.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/bairros_3.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/bairros_4.jpg",
+      "https://gzanata7.github.io/midia/2026-11/tipos/bairros_5.jpg"
+    ],
+    "legenda": "Tirinha Leblon, Ipanema ou Niterói",
+    "status": "publicado",
+    "media_id": "18128892719314324",
+    "obs": "TikTok (fotos) agendado 27/11 18h23"
+  },
+  {
     "data": "2026-11-26",
     "ordem": 1,
     "tipo": "reel",
